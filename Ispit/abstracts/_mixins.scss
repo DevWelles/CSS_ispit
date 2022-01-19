@@ -1,0 +1,10 @@
+@mixin animation-mixin($name) {
+  @keyframes #{$name} {
+    from {
+      transform: translateY(-220%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+}

@@ -1,0 +1,95 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("./image.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container div {
+  height: 350px;
+  width: 350px;
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 50%;
+  font-size: 10rem;
+  color: white;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.one {
+  background-color: gray;
+  -webkit-animation: animation1 1.5s ease-in;
+          animation: animation1 1.5s ease-in;
+}
+
+.two {
+  background-color: red;
+  -webkit-animation: animation1 1.5s ease-in 1.5s;
+          animation: animation1 1.5s ease-in 1.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.three {
+  background-color: #b6ac1d;
+  -webkit-animation: animation1 1.5s ease-in 3s;
+          animation: animation1 1.5s ease-in 3s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes animation1 {
+  from {
+    -webkit-transform: translateY(-220%);
+            transform: translateY(-220%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes animation1 {
+  from {
+    -webkit-transform: translateY(-220%);
+            transform: translateY(-220%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
